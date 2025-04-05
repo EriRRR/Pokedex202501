@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    background-image: url("https://s0.smartresize.com/wallpaper/1014/980/HD-wallpaper-pokemon-squirtle-gameboy-color-charmander-bulbasaur.jpg");
+    background-size: cover; /* To make the image cover the entire viewport */
+    background-repeat: no-repeat; /* To prevent the image from repeating */
+    background-attachment: fixed; /* Optional: To make the background image fixed during scrolling */
+  }
+
+#root {
+    @apply flex flex-col min-h-screen;
+}
+
+.navigation ul {
+    @apply flex flex-col md:flex-row m-0 p-0 justify-center items-center gap-4;
+}
+
+.navigation ul li a {
+    @apply inline-block text-sm py-2 px-4 cursor-pointer font-bold;
+}
+
+.footer-style {
+    @apply bg-red-500 text-white p-4 h-12 flex items-center justify-center;
+}
+
+.footer-content {
+    @apply flex items-center;
+}
+
+.footer-image {
+    @apply h-8 w-auto mr-4;
+}
+
+
+.pokemonList {
+    @apply flex justify-between gap-4 flex-wrap p-4
+}
+
+.pokemonListItem {
+    @apply flex flex-row gap-2 min-w-60 border bg-white;
+}
+
+.pokemonListItem div {
+    @apply flex flex-col p-2;
+}
+
+.pokemonListItem img {
+    @apply object-cover;
+}
+
+.pokemndetail h1 {
+    @apply text-center text-5xl font-bold text-gray-800 capitalize;
+}
+.pokemndetail img {
+    @apply items-center;
+}
+
+@import "./styles/paging.css";
